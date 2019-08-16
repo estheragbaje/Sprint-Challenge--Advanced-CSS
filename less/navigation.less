@@ -1,1 +1,26 @@
 // Navigation code here
+
+.top-header-bg {
+  background-color: @header-bg;
+
+  .nav-header {
+    .flex-column-center();
+
+    h1 {
+      font-size: @top-header-font-size;
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      @media @mobile {
+        width: 80%;
+      }
+    }
+    a {
+      .anchor-style();
+    }
+  }
+}
