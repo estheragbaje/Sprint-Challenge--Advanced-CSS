@@ -24,6 +24,17 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @mobile {
+        width: 100%;
+
+        &.sky,
+        &.launch {
+          @media @mobile {
+            display: none;
+          }
+        }
+      }
     }
   }
 
